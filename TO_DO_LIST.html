@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="to_Do_List.css">
+</head>
+
+<body>
+    <div class="main-Form">
+        <div class="form-head">
+            <h1>TO DO LIST</h1>
+            <h3>YOUR TASK </h3>
+        </div>
+        <div class="inpt-Field">
+            <label for="addTask">Enter Task: </label><br>
+            <br><textarea name="task" id="inpTask" cols="100" rows="3" placeholder="Write your task.... "></textarea>
+        </div>
+        <div class="inpt-btn">
+            <br><button onclick="addTask()" id="add-btn">Add Task</button>
+            <button onclick="searchTask()" id="search-btn">Search Task</button>
+            <button onclick="deleteTask()" id="delete-btn">Delete Task</button>
+            <button onclick="displayAll()" id="display-btn">Display All</button>
+            <button onclick="hideTask()" id="hide-btn">Hide</button>
+        </div>
+        <h2 id="notify"></h2>
+    </div>
+    <script src="to_Do_List.js"></script>
+</body>
+
+</html>
